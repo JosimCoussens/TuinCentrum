@@ -9,7 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{58
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{A256FBCE-FD95-467A-9FD4-928583A78C4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuinCentrum", "TuinCentrum\TuinCentrum.csproj", "{FCD8F1F6-EF63-4F19-BB27-AF8F423DD695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuinCentrum", "TuinCentrum\TuinCentrum.csproj", "{FCD8F1F6-EF63-4F19-BB27-AF8F423DD695}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{C1073274-0D2C-4902-8750-329E212270CF}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Eindopdracht\dashboard_backgroundImage.jpg = ..\..\Eindopdracht\dashboard_backgroundImage.jpg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
