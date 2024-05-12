@@ -13,12 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace TuinCentrum.Windows {
+
     /// <summary>
     /// Interaction logic for dashboard.xaml
     /// </summary>
     public partial class dashboard : Window {
+
         public dashboard() {
             InitializeComponent();
+            Style = (Style)FindResource(typeof(Window)); // Set font
         }
     }
 }

@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\dashboard_backgroundImage.jpg" />
+    <None Remove="Resources\dashboard_backgroundImage_V2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Remove="Windows\App.xaml" />
   </ItemGroup>
 
@@ -23,6 +28,11 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageReference Include="ZendeskApi_v2" Version="3.12.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\dashboard_backgroundImage.jpg" />
+    <Resource Include="Resources\dashboard_backgroundImage_V2.jpg" />
   </ItemGroup>
 
   <ItemGroup>

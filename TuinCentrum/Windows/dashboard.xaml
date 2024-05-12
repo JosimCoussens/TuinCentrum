@@ -6,16 +6,31 @@
         xmlns:local="clr-namespace:TuinCentrum.Windows"
         mc:Ignorable="d"
         Title="dashboard" Height="675" Width="1200">
+    <Window.Resources>
+        <Style TargetType="{x:Type Window}">
+            <!--Zet font type-->
+            <Setter Property="FontFamily" Value="Bahnschrift" />
+        </Style>
+    </Window.Resources>
+
     <Grid>
+        <!-- Achtergrondafbeelding -->
+        <Grid.Background>
+            <ImageBrush ImageSource="../Resources/dashboard_backgroundImage.jpg" />
+        </Grid.Background>
+
         <!-- Welkomstboodschap -->
-        <TextBlock Text="Welkom!" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" />
+        <TextBlock Text="Welkom!" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,0" />
 
         <!-- Knoppen voor verschillende functies -->
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
-            <Button Content="Nieuwe Offerte" Width="240" Height="40"  Margin="10" />
-            <Button Content="Klanten Zoeken" Width="240" Height="40" Margin="10" />
-            <Button Content="Offertes Zoeken" Width="240" Height="40" Margin="10" />
-            <Button Content="Producten Beheren" Width="240" Height="40" Margin="10" />
-        </StackPanel>
+        <UniformGrid Columns="4" Height="90" VerticalAlignment="Top">
+            <UniformGrid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.5" />
+            </UniformGrid.Background>
+            <Button Content="Nieuwe Offerte" Height="50" Margin="10,0,5,0" Background="white" />
+            <Button Content="Klanten Zoeken" Height="50" Margin="5,0,5,0" Background="white" />
+            <Button Content="Offertes Zoeken" Height="50" Margin="5,0,5,0" Background="white" />
+            <Button Content="Producten Beheren" Height="50" Margin="5,0,10,0" Background="white" />
+        </UniformGrid>
     </Grid>
 </Window>
